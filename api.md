@@ -4,9 +4,8 @@
 - Event
 
 ## User
-- name:
-	- first
-	- last
+- firstname
+- lastname
 - email
 - avatar
 - id
@@ -39,6 +38,8 @@
 All results are JSON.
 At least one of the parameters are required.
 All italicized parameters are required.
+
+self: userId -> Needs to become oauth token
 
 - getUsers
 - getSocieties
@@ -91,7 +92,7 @@ TODO: Login / Authentication
   - avatar
   - self: the User performing the request
 - Results:
-  - User: returns the newly created User
+  - User: user id
 
 ## createSociety
 - METHOD: POST
@@ -100,20 +101,20 @@ TODO: Login / Authentication
   - description
   - categories
   - links
-  - self: User creating the request
+  - self: user id
 - Result:
   - societies: list of Societies
   
 ## createEvent
 - METHOD: POST
 - Parameters:
-  - name
-  - Society
+  - **name**
+  - **SocietyId**
   - description
   - tags
   - start date/time
   - end date/time
   - location
-  - self: User creating the request
+  - **self**: user id
 - Result:
   - societies: list of Societies
