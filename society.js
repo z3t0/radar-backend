@@ -16,7 +16,8 @@ let createSociety = (opts) => {
 	    description: opts.description,
 	    categories: opts.categories,
 	    links: opts.links,
-	    self: opts.userId
+	    contact: [opts.userId],
+	    admins: [opts.userId],
 	})
 	    .withCondition(conditions)
 	    .execute()

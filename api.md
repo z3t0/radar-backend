@@ -18,7 +18,6 @@
   - facebook:
   - website:
   - twitter
-- events: list of events
 - contact: list of Users
 - members: list of Users
 - admins: list of Users
