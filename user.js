@@ -1,6 +1,6 @@
 const database = require('./database')
 
-let user = (opts) => {
+let createUser = (opts) => {
 
     return new Promise ((resolve, reject) => {
 	// Do not override existing users
@@ -23,4 +23,4 @@ let user = (opts) => {
     })
 }
 
-module.exports = user
+module.exports.createUser = createUser
