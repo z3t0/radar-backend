@@ -6,6 +6,9 @@
     "repository": "git@github.com:z3t0/radar-backend.git",
     "author": "Rafi Khan <zetoslab@gmail.com>",
     "license": "GPL-3.0-or-later",
+    "scripts": {
+	"start": "node server.js"
+    },
     "dependencies": {
 	"express": "^4.16.3"
     }
