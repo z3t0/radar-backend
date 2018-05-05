@@ -7,12 +7,14 @@
    "author": "Rafi Khan <zetoslab@gmail.com>",
    "license": "GPL-3.0-or-later",
    "scripts": {
-      "start": "node server.js"
+       "start": "node server.js",
+       "monitor": "nodemon -- --inspect server.js"
    },
    "dependencies": {
       "dotenv": "^5.0.1",
       "dynamite": "^0.9.5",
       "express": "^4.16.3",
+      "nanoid": "^1.0.2",
       "simple-oauth2": "^1.5.2"
    },
    "devDependencies": {

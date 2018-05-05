@@ -101,7 +101,7 @@ TODO: Login / Authentication
   - description
   - categories
   - links
-  - self: user id
+  - userId: user id: email
 - Result:
   - societies: list of Societies
   

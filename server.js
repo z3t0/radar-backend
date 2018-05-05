@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 
 const user = require('./user')
+const society = require('./society')
 
 // Support JSON-encoded parameters
 app.use(express.json())
@@ -13,6 +14,17 @@ app.get('/', (req, res) => {
 
 app.post('/createUser', (req, res) => {
     user.createUser(req.body)
+	.then(() => {
+	    res.json({'status': 'success'})
+	})
+	.catch( (e) => {
+	    console.log(e.message)
+	    res.json({'status': e.message})
+	})
+})
+
+app.post('/createSociety', (req, res) => {
+    society.createSociety(req.body)
 	.then(() => {
 	    res.json({'status': 'success'})
 	})
