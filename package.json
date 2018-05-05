@@ -1,12 +1,12 @@
 {
-  "name": "radar-backend",
-  "version": "1.0.0",
-  "description": "Processes HTTP requests for the RADAR app",
-  "main": "server.js",
-  "repository": "git@github.com:z3t0/radar-backend.git",
-  "author": "Rafi Khan <zetoslab@gmail.com>",
-  "license": "GPL-3.0-or-later",
-  "dependencies": {
-    "express": "^4.16.3"
-  }
+    "name": "radar-backend",
+    "version": "1.0.0",
+    "description": "Processes HTTP requests for the RADAR app",
+    "main": "server.js",
+    "repository": "git@github.com:z3t0/radar-backend.git",
+    "author": "Rafi Khan <zetoslab@gmail.com>",
+    "license": "GPL-3.0-or-later",
+    "dependencies": {
+	"express": "^4.16.3"
+    }
 }
