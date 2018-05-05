@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
 })
 
 app.post('/createUser', (req, res) => {
-    let status
     user.createUser(req.body)
 	.then(() => {
 	    res.json({'status': 'success'})
